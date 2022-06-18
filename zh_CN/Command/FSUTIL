@@ -1,18 +1,18 @@
-/? ÊÇÎŞĞ§²ÎÊı¡£
----- Ö§³ÖµÄÃüÁî ----
+/? æ˜¯æ— æ•ˆå‚æ•°ã€‚
+---- æ”¯æŒçš„å‘½ä»¤ ----
 
-8dot3name       8dot3name ¹ÜÀí
-behavior        ¿ØÖÆÎÄ¼şÏµÍ³ĞĞÎª
-dirty           ¹ÜÀí¾íµÄÒÑËğ»µÎ»Êı
-file            ÎÄ¼şÌØ¶¨ÃüÁî
-fsinfo          ÎÄ¼şÏµÍ³ĞÅÏ¢
-hardlink        Ó²Á´½Ó¹ÜÀí
-objectid        ¶ÔÏó ID ¹ÜÀí
-quota           Åä¶î¹ÜÀí
-repair          ×ÔÁÆ¹ÜÀí
-reparsepoint    ÖØ·ÖÎöµã¹ÜÀí
-resource        ÊÂÎñ×ÊÔ´¹ÜÀíÆ÷¹ÜÀí
-sparse          Ï¡ÊèÎÄ¼ş¿ØÖÆ
-transaction     ÊÂÎñ¹ÜÀí
-usn             USN ¹ÜÀí
-volume          ¾í¹ÜÀí
+8dot3name       8dot3name ç®¡ç†
+behavior        æ§åˆ¶æ–‡ä»¶ç³»ç»Ÿè¡Œä¸º
+dirty           ç®¡ç†å·çš„å·²æŸåä½æ•°
+file            æ–‡ä»¶ç‰¹å®šå‘½ä»¤
+fsinfo          æ–‡ä»¶ç³»ç»Ÿä¿¡æ¯
+hardlink        ç¡¬é“¾æ¥ç®¡ç†
+objectid        å¯¹è±¡ ID ç®¡ç†
+quota           é…é¢ç®¡ç†
+repair          è‡ªç–—ç®¡ç†
+reparsepoint    é‡åˆ†æç‚¹ç®¡ç†
+resource        äº‹åŠ¡èµ„æºç®¡ç†å™¨ç®¡ç†
+sparse          ç¨€ç–æ–‡ä»¶æ§åˆ¶
+transaction     äº‹åŠ¡ç®¡ç†
+usn             USN ç®¡ç†
+volume          å·ç®¡ç†

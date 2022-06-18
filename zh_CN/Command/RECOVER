@@ -1,5 +1,5 @@
-���𻵵Ĵ����лָ��ɶ�ȡ����Ϣ��
+从损坏的磁盘中恢复可读取的信息。
 
 RECOVER [drive:][path]filename
-��ʹ�� RECOVER ����֮ǰ��
-���Ȳ��� Windows �����е���������ο���
+在使用 RECOVER 命令之前，
+请先参阅 Windows 帮助中的联机命令参考。

@@ -1,18 +1,18 @@
-����ϵͳ�豸��
+配置系统设备。
 
-���ж˿�:          MODE COMm[:] [BAUD=b] [PARITY=p] [DATA=d] [STOP=s]
+串行端口:          MODE COMm[:] [BAUD=b] [PARITY=p] [DATA=d] [STOP=s]
                                 [to=on|off] [xon=on|off] [odsr=on|off]
                                 [octs=on|off] [dtr=on|off|hs]
                                 [rts=on|off|hs|tg] [idsr=on|off]
 
-�豸״̬:          MODE [device] [/STATUS]
+设备状态:          MODE [device] [/STATUS]
 
-��ӡ�ض���:        MODE LPTn[:]=COMm[:]
+打印重定向:        MODE LPTn[:]=COMm[:]
 
-ѡ�����ҳ:        MODE CON[:] CP SELECT=yyy
+选择代码页:        MODE CON[:] CP SELECT=yyy
 
-����ҳ״̬:        MODE CON[:] CP [/STATUS]
+代码页状态:        MODE CON[:] CP [/STATUS]
 
-��ʾģʽ:          MODE CON[:] [COLS=c] [LINES=n]
+显示模式:          MODE CON[:] [COLS=c] [LINES=n]
 
-������:            MODE CON[:] [RATE=r DELAY=d]
+击键率:            MODE CON[:] [RATE=r DELAY=d]

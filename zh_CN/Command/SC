@@ -1,58 +1,58 @@
 
-´íÎó:  Î´ÖªÃüÁî
+é”™è¯¯:  æœªçŸ¥å‘½ä»¤
 
-ÃèÊö:
-        SC ÊÇÓÃÓÚÓë·þÎñ¿ØÖÆ¹ÜÀíÆ÷ºÍ·þÎñ½øÐÐÍ¨ÐÅµÄÃüÁîÐÐ³ÌÐò¡£
-ÓÃ·¨:
+æè¿°:
+        SC æ˜¯ç”¨äºŽä¸ŽæœåŠ¡æŽ§åˆ¶ç®¡ç†å™¨å’ŒæœåŠ¡è¿›è¡Œé€šä¿¡çš„å‘½ä»¤è¡Œç¨‹åºã€‚
+ç”¨æ³•:
         sc <server> [command] [service name] <option1> <option2>...
 
 
-        Ñ¡Ïî <server> µÄ¸ñÊ½Îª "\\ServerName"
-        ¼üÈë "sc [command]" ¿ÉÒÔ»ñµÃÓÐ¹ØÃüÁîµÄ½øÒ»²½°ïÖú
-        ÃüÁî:
-          query-----------²éÑ¯·þÎñµÄ×´Ì¬£¬
-                          »òÃ¶¾Ù·þÎñÀàÐÍµÄ×´Ì¬¡£
-          queryex---------²éÑ¯·þÎñµÄÀ©Õ¹×´Ì¬£¬
-                          »òÃ¶¾Ù·þÎñÀàÐÍµÄ×´Ì¬¡£
-          start-----------Æô¶¯·þÎñ¡£
-          pause-----------Ïò·þÎñ·¢ËÍ PAUSE ¿ØÖÆÇëÇó¡£
-          interrogate-----Ïò·þÎñ·¢ËÍ INTERROGATE ¿ØÖÆÇëÇó¡£
-          continue--------Ïò·þÎñ·¢ËÍ CONTINUE ¿ØÖÆÇëÇó¡£
-          stop------------Ïò·þÎñ·¢ËÍ STOP ÇëÇó¡£
-          config----------¸ü¸Ä·þÎñµÄÅäÖÃ(ÓÀ¾Ã)¡£
-          description-----¸ü¸Ä·þÎñµÄÃèÊö¡£
-          failure---------¸ü¸Ä·þÎñÊ§°ÜÊ±Ö´ÐÐµÄ²Ù×÷¡£
-          failureflag-----¸ü¸Ä·þÎñµÄÊ§°Ü²Ù×÷±êÖ¾¡£
-          sidtype---------¸ü¸Ä·þÎñµÄ·þÎñ SID ÀàÐÍ¡£
-          privs-----------¸ü¸Ä·þÎñµÄËùÐèÈ¨ÏÞ¡£
-          qc--------------²éÑ¯·þÎñµÄÅäÖÃÐÅÏ¢¡£
-          qdescription----²éÑ¯·þÎñµÄÃèÊö¡£
-          qfailure--------²éÑ¯Ê§°ÜÊ±·þÎñÖ´ÐÐµÄ²Ù×÷¡£
-          qfailureflag----²éÑ¯·þÎñµÄÊ§°Ü²Ù×÷±êÖ¾¡£
-          qsidtype--------²éÑ¯·þÎñµÄ·þÎñ SID ÀàÐÍ¡£
-          qprivs----------²éÑ¯·þÎñµÄËùÐèÈ¨ÏÞ¡£
-          qtriggerinfo----²éÑ¯·þÎñµÄ´¥·¢Æ÷²ÎÊý¡£
-          qpreferrednode--²éÑ¯Ê×Ñ¡µÄ·þÎñ NUMA ½Úµã¡£
-          delete----------(´Ó×¢²á±í)É¾³ý·þÎñ¡£
-          create----------´´½¨·þÎñ(½«ÆäÌí¼Óµ½×¢²á±í)¡£
-          control---------Ïò·þÎñ·¢ËÍ¿ØÖÆ¡£
-          sdshow----------ÏÔÊ¾·þÎñµÄ°²È«ÃèÊö·û¡£
-          sdset-----------ÉèÖÃ·þÎñµÄ°²È«ÃèÊö·û¡£
-          showsid---------ÏÔÊ¾ÏàÓ¦ÓÚ¼Ù¶¨Ãû³ÆµÄ SID ×Ö·û´®¡£
-          triggerinfo-----ÅäÖÃ·þÎñµÄ´¥·¢Æ÷²ÎÊý¡£
-          preferrednode---ÉèÖÃÊ×Ñ¡µÄ·þÎñ NUMA ½Úµã¡£
-          GetDisplayName--»ñÈ¡·þÎñµÄ DisplayName 
-          GetKeyName------»ñÈ¡·þÎñµÄ ServiceKeyName¡£
-          EnumDepend------Ã¶¾Ù·þÎñµÄÒÀ´æ¹ØÏµ¡£
+        é€‰é¡¹ <server> çš„æ ¼å¼ä¸º "\\ServerName"
+        é”®å…¥ "sc [command]" å¯ä»¥èŽ·å¾—æœ‰å…³å‘½ä»¤çš„è¿›ä¸€æ­¥å¸®åŠ©
+        å‘½ä»¤:
+          query-----------æŸ¥è¯¢æœåŠ¡çš„çŠ¶æ€ï¼Œ
+                          æˆ–æžšä¸¾æœåŠ¡ç±»åž‹çš„çŠ¶æ€ã€‚
+          queryex---------æŸ¥è¯¢æœåŠ¡çš„æ‰©å±•çŠ¶æ€ï¼Œ
+                          æˆ–æžšä¸¾æœåŠ¡ç±»åž‹çš„çŠ¶æ€ã€‚
+          start-----------å¯åŠ¨æœåŠ¡ã€‚
+          pause-----------å‘æœåŠ¡å‘é€ PAUSE æŽ§åˆ¶è¯·æ±‚ã€‚
+          interrogate-----å‘æœåŠ¡å‘é€ INTERROGATE æŽ§åˆ¶è¯·æ±‚ã€‚
+          continue--------å‘æœåŠ¡å‘é€ CONTINUE æŽ§åˆ¶è¯·æ±‚ã€‚
+          stop------------å‘æœåŠ¡å‘é€ STOP è¯·æ±‚ã€‚
+          config----------æ›´æ”¹æœåŠ¡çš„é…ç½®(æ°¸ä¹…)ã€‚
+          description-----æ›´æ”¹æœåŠ¡çš„æè¿°ã€‚
+          failure---------æ›´æ”¹æœåŠ¡å¤±è´¥æ—¶æ‰§è¡Œçš„æ“ä½œã€‚
+          failureflag-----æ›´æ”¹æœåŠ¡çš„å¤±è´¥æ“ä½œæ ‡å¿—ã€‚
+          sidtype---------æ›´æ”¹æœåŠ¡çš„æœåŠ¡ SID ç±»åž‹ã€‚
+          privs-----------æ›´æ”¹æœåŠ¡çš„æ‰€éœ€æƒé™ã€‚
+          qc--------------æŸ¥è¯¢æœåŠ¡çš„é…ç½®ä¿¡æ¯ã€‚
+          qdescription----æŸ¥è¯¢æœåŠ¡çš„æè¿°ã€‚
+          qfailure--------æŸ¥è¯¢å¤±è´¥æ—¶æœåŠ¡æ‰§è¡Œçš„æ“ä½œã€‚
+          qfailureflag----æŸ¥è¯¢æœåŠ¡çš„å¤±è´¥æ“ä½œæ ‡å¿—ã€‚
+          qsidtype--------æŸ¥è¯¢æœåŠ¡çš„æœåŠ¡ SID ç±»åž‹ã€‚
+          qprivs----------æŸ¥è¯¢æœåŠ¡çš„æ‰€éœ€æƒé™ã€‚
+          qtriggerinfo----æŸ¥è¯¢æœåŠ¡çš„è§¦å‘å™¨å‚æ•°ã€‚
+          qpreferrednode--æŸ¥è¯¢é¦–é€‰çš„æœåŠ¡ NUMA èŠ‚ç‚¹ã€‚
+          delete----------(ä»Žæ³¨å†Œè¡¨)åˆ é™¤æœåŠ¡ã€‚
+          create----------åˆ›å»ºæœåŠ¡(å°†å…¶æ·»åŠ åˆ°æ³¨å†Œè¡¨)ã€‚
+          control---------å‘æœåŠ¡å‘é€æŽ§åˆ¶ã€‚
+          sdshow----------æ˜¾ç¤ºæœåŠ¡çš„å®‰å…¨æè¿°ç¬¦ã€‚
+          sdset-----------è®¾ç½®æœåŠ¡çš„å®‰å…¨æè¿°ç¬¦ã€‚
+          showsid---------æ˜¾ç¤ºç›¸åº”äºŽå‡å®šåç§°çš„ SID å­—ç¬¦ä¸²ã€‚
+          triggerinfo-----é…ç½®æœåŠ¡çš„è§¦å‘å™¨å‚æ•°ã€‚
+          preferrednode---è®¾ç½®é¦–é€‰çš„æœåŠ¡ NUMA èŠ‚ç‚¹ã€‚
+          GetDisplayName--èŽ·å–æœåŠ¡çš„ DisplayName 
+          GetKeyName------èŽ·å–æœåŠ¡çš„ ServiceKeyNameã€‚
+          EnumDepend------æžšä¸¾æœåŠ¡çš„ä¾å­˜å…³ç³»ã€‚
 
-        ÏÂÁÐÃüÁî²»ÒªÇó·þÎñÃû³Æ:
+        ä¸‹åˆ—å‘½ä»¤ä¸è¦æ±‚æœåŠ¡åç§°:
         sc <server> <command> <option>
-          boot------------(ok | bad) Ö¸Ê¾ÊÇ·ñ½«ÉÏÒ»´ÎÆô¶¯±£´æÎª
-                          ×î½üÒ»´ÎÒÑÖªµÄÕýÈ·Æô¶¯ÅäÖÃ
-          Lock------------Ëø¶¨·þÎñÊý¾Ý¿â
-          QueryLock-------²éÑ¯ SCManager Êý¾Ý¿âµÄ LockStatus
-Ê¾Àý:
+          boot------------(ok | bad) æŒ‡ç¤ºæ˜¯å¦å°†ä¸Šä¸€æ¬¡å¯åŠ¨ä¿å­˜ä¸º
+                          æœ€è¿‘ä¸€æ¬¡å·²çŸ¥çš„æ­£ç¡®å¯åŠ¨é…ç½®
+          Lock------------é”å®šæœåŠ¡æ•°æ®åº“
+          QueryLock-------æŸ¥è¯¢ SCManager æ•°æ®åº“çš„ LockStatus
+ç¤ºä¾‹:
         sc start MyService
 
-ÊÇ·ñÏë²ÎÔÄ QUERY ºÍ QUERYEX ÃüÁîµÄ°ïÖú? [ y | n ]:
+æ˜¯å¦æƒ³å‚é˜… QUERY å’Œ QUERYEX å‘½ä»¤çš„å¸®åŠ©? [ y | n ]:
 

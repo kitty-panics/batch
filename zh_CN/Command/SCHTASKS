@@ -1,26 +1,26 @@
 
 SCHTASKS /parameter [arguments] 
 
-����:
-    ��������Ա������ɾ������ѯ�����ġ����к���ֹ���ػ�Զ��ϵͳ�ϵļƻ���
-    ��
+描述:
+    允许管理员创建、删除、查询、更改、运行和中止本地或远程系统上的计划任
+    务。
 
-�����б�:
-    /Create         �����¼ƻ�����
+参数列表:
+    /Create         创建新计划任务。
 
-    /Delete         ɾ���ƻ�����
+    /Delete         删除计划任务。
 
-    /Query          ��ʾ���мƻ�����
+    /Query          显示所有计划任务。
 
-    /Change         ���ļƻ��������ԡ�
+    /Change         更改计划任务属性。
 
-    /Run            �������мƻ�����
+    /Run            按需运行计划任务。
 
-    /End            ��ֹ��ǰ�������еļƻ�����
+    /End            中止当前正在运行的计划任务。
 
-    /ShowSid        ��ʾ��ƻ�������������Ӧ�İ�ȫ��ʶ����
+    /ShowSid        显示与计划的任务名称相应的安全标识符。
 
-    /?              ��ʾ�˰�����Ϣ��
+    /?              显示此帮助消息。
 
 Examples:
     SCHTASKS 

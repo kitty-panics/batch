@@ -1,10 +1,10 @@
 
-Microsoft DiskPart °æ±¾ 6.1.7601
+Microsoft DiskPart ç‰ˆæœ¬ 6.1.7601
 Copyright (C) 1999-2008 Microsoft Corporation.
-ÔÚ¼ÆËã»úÉÏ: PC
+åœ¨è®¡ç®—æœºä¸Š: PC
 
-Microsoft DiskPart Óï·¨:
+Microsoft DiskPart è¯­æ³•:
 	diskpart [/s <script>] [/?]
 
-	/s <script> - Ê¹ÓÃÒ»¸ö DiskPart ½Å±¾¡£
-	/?          - ÏÔÊ¾Õâ¸ö°ïÖúÆÁÄ»¡£
+	/s <script> - ä½¿ç”¨ä¸€ä¸ª DiskPart è„šæœ¬ã€‚
+	/?          - æ˜¾ç¤ºè¿™ä¸ªå¸®åŠ©å±å¹•ã€‚

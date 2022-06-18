@@ -1,6 +1,6 @@
-��ӡ�ı��ļ���
+打印文本文件。
 
 PRINT [/D:device] [[drive:][path]filename[...]]
 
-   /D:device   ָ����ӡ�豸��
+   /D:device   指定打印设备。
 
