@@ -1,0 +1,10 @@
+
+Microsoft DiskPart 版本 6.1.7601
+Copyright (C) 1999-2008 Microsoft Corporation.
+在计算机上: PC
+
+Microsoft DiskPart 语法:
+	diskpart [/s <script>] [/?]
+
+	/s <script> - 使用一个 DiskPart 脚本。
+	/?          - 显示这个帮助屏幕。

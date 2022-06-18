@@ -3,4 +3,4 @@
 RENAME [drive:][path]filename1 filename2.
 REN [drive:][path]filename1 filename2.
 
-请注意，你不能为目标文件指定新的驱动器或路径。
+请注意，您不能为目标文件指定新的驱动器或路径。

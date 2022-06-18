@@ -58,5 +58,5 @@ TASKKILL [/S system [/U username [/P [password]]]]
     TASKKILL /F /IM cmd.exe /T 
     TASKKILL /F /FI "PID ge 1000" /FI "WINDOWTITLE ne untitle*"
     TASKKILL /F /FI "USERNAME eq NT AUTHORITY\SYSTEM" /IM notepad.exe
-    TASKKILL /S system /U 域\用户名 /FI "用户名 ne NT*" /IM *
+    TASKKILL /S system /U domain\username /FI "USERNAME ne NT*" /IM *
     TASKKILL /S system /U username /P password /FI "IMAGENAME eq note*"

@@ -1,38 +1,33 @@
 
 ICACLS name /save aclfile [/T] [/C] [/L] [/Q]
-    将匹配名称的文件和文件夹的 DACL 存储到 aclfile 中
-    以便将来与 /restore 一起使用。请注意，未保存 SACL、
-    所有者或完整性标签。
+    将匹配名称的文件和文件夹的 DACL 存储到 aclfile 中以便将来与
+    /restore 一起使用。请注意，未保存 SACL、所有者或完整性标签。
 
 ICACLS directory [/substitute SidOld SidNew [...]] /restore aclfile
                  [/C] [/L] [/Q]
     将存储的 DACL 应用于目录中的文件。
 
 ICACLS name /setowner user [/T] [/C] [/L] [/Q]
-    更改所有匹配名称的所有者。该选项不会强制更改所有
-    身份；使用 takeown.exe 实用程序可实现
-    该目的。
+    更改所有匹配名称的所有者。该选项不会强制更改所有身份；
+    使用 takeown.exe 实用程序可实现该目的。
 
 ICACLS name /findsid Sid [/T] [/C] [/L] [/Q]
-    查找包含显式提及 SID 的 ACL 的
-    所有匹配名称。
+    查找包含显式提及 SID 的 ACL 的所有匹配名称。
 
 ICACLS name /verify [/T] [/C] [/L] [/Q]
-    查找其 ACL 不规范或长度与 ACE
-    计数不一致的所有文件。
+    查找其 ACL 不规范或长度与 ACE 计数不一致的所有文件。
 
 ICACLS name /reset [/T] [/C] [/L] [/Q]
     为所有匹配文件使用默认继承的 ACL 替换 ACL。
 
 ICACLS name [/grant[:r] Sid:perm[...]]
        [/deny Sid:perm [...]]
-       [/remove[:g|:d]] Sid[...]] [/T] [/C] [/L] [/Q]
+       [/remove[:g|:d]] Sid[...]] [/T] [/C] [/L]
        [/setintegritylevel Level:policy[...]]
 
     /grant[:r] Sid:perm 授予指定的用户访问权限。如果使用 :r，
         这些权限将替换以前授予的所有显式权限。
-        如果不使用 :r，这些权限将添加到以前授予的
-        所有显式权限。
+        如果不使用 :r，这些权限将添加到以前授予的所有显式权限。
 
     /deny Sid:perm 显式拒绝指定的用户访问权限。
         将为列出的权限添加显式拒绝 ACE，
@@ -42,12 +37,11 @@ ICACLS name [/grant[:r] Sid:perm[...]]
         :g，将删除授予该 SID 的所有权限。使用
         :d，将删除拒绝该 SID 的所有权限。
 
-    /setintegritylevel [(CI)(OI)]级别将完整性 ACE 显式
-        添加到所有匹配文件。要指定的级别为以下级别
-        之一:
-             L[ow]
-             M[edium]
-             H[igh]
+    /setintegritylevel [(CI)(OI)] 级别将完整性 ACE 显式添加到所有
+        匹配文件。要指定的级别为以下级别之一:
+            L[ow]
+            M[edium]
+            H[igh]
         完整性 ACE 的继承选项可以优先于级别，但只应用于
         目录。
 
@@ -64,11 +58,9 @@ ICACLS name [/grant[:r] Sid:perm[...]]
     /T 指示在以该名称指定的目录下的所有匹配文件/目录上
         执行此操作。
 
-    /C 指示此操作将在所有文件错误上继续进行。
-        仍将显示错误消息。
+    /C 指示此操作将在所有文件错误上继续进行。仍将显示错误消息。
 
-    /L 指示此操作在符号
-      链接本身而不是其目标上执行。
+    /L 指示此操作在符号链接本身而不是其目标上执行。
 
     /Q 指示 icacls 应该禁止显示成功消息。
 
@@ -78,7 +70,7 @@ ICACLS name [/grant[:r] Sid:perm[...]]
             继承的拒绝
             继承的授予
 
-    perm 是权限掩码，可以指定两种格式之一:
+    perm 是权限掩码，可以两种格式之一指定:
         简单权限序列:
                 N - 无访问权限
                 F - 完全访问权限
@@ -120,16 +112,14 @@ ICACLS name [/grant[:r] Sid:perm[...]]
 
         icacls c:\windows\* /save AclFile /T
         - 将 c:\windows 及其子目录下所有文件的
-          ACL 保存到 AclFile。
+           ACL 保存到 AclFile。
 
         icacls c:\windows\ /restore AclFile
         - 将还原 c:\windows 及其子目录下存在的 AclFile 内
           所有文件的 ACL。
 
         icacls file /grant Administrator:(D,WDAC)
-        - 将授予用户对文件删除和写入 DAC 的管理员
-          权限。
+        - 将授予用户对文件删除和写入 DAC 的管理员权限。
 
         icacls file /grant *S-1-1-0:(D,WDAC)
-        - 将授予由 sid S-1-1-0 定义的用户对文件删除和
-          写入 DAC 的权限。
+        - 将授予由 sid S-1-1-0 定义的用户对文件删除和写入 DAC 的权限。

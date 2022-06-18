@@ -69,7 +69,7 @@ CMDEXTVERSION 条件的作用跟 ERRORLEVEL 的一样，除了它
 除了它取得一个环境变量，返回的结果是 true。
 
 如果没有名为 ERRORLEVEL 的环境变量，%ERRORLEVEL%
-会扩充为 ERROLEVEL 当前数值的字符串表达式；否则，你会得到
+会扩充为 ERROLEVEL 当前数值的字符串表达式；否则，您会得到
 其数值。运行程序后，以下语句说明 ERRORLEVEL 的用法:
 
     goto answer%ERRORLEVEL%
@@ -78,14 +78,14 @@ CMDEXTVERSION 条件的作用跟 ERRORLEVEL 的一样，除了它
     :answer1
     echo Program had return code 1
 
-你也可以使用以上的数字比较:
+您也可以使用以上的数字比较:
 
     IF %ERRORLEVEL% LEQ 1 goto okay
 
 如果没有名为 CMDCMDLINE 的环境变量，%CMDCMDLINE%
 将在 CMD.EXE 进行任何处理前扩充为传递给 CMD.EXE 的原始
-命令行；否则，你会得到其数值。
+命令行；否则，您会得到其数值。
 
 如果没有名为 CMDEXTVERSION 的环境变量，
 %CMDEXTVERSION% 会扩充为 CMDEXTVERSION 当前数值的
-字串符表达式；否则，你会得到其数值。
+字串符表达式；否则，您会得到其数值。

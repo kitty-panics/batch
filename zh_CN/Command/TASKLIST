@@ -5,7 +5,6 @@ TASKLIST [/S system [/U username [/P [password]]]]
 描述:
     该工具显示在本地或远程机器上当前运行的进程列表。
 
-
 参数列表:
    /S     system           指定连接到的远程系统。
 
@@ -19,53 +18,48 @@ TASKLIST [/S system [/U username [/P [password]]]]
 
    /SVC                    显示每个进程中主持的服务。
 
-   /APPS 显示应用商店应用及其关联的进程。
+   /V                      显示详述任务信息。
 
-   /V                      显示详细任务信息。
-
-   /FI    filter           显示一系列符合筛选器
-                           指定条件的任务。
+   /FI    filter           显示一系列符合筛选器指定的标准的任务。
 
    /FO    format           指定输出格式。
                            有效值: "TABLE"、"LIST"、"CSV"。
 
-   /NH                     指定列标题不应该
-                           在输出中显示。
+   /NH                     指定列标题不应该在输出中显示。
                            只对 "TABLE" 和 "CSV" 格式有效。
 
-   /?                      显示此帮助消息。
+   /?                      显示帮助消息。
+
 
 筛选器:
-    筛选器名称     有效运算符           有效值
+    筛选器名        有效操作符                有效值
     -----------     ---------------           --------------------------
-    STATUS          eq, ne                    RUNNING | SUSPENDED
+    STATUS          eq, ne                    RUNNING | 
                                               NOT RESPONDING | UNKNOWN
     IMAGENAME       eq, ne                    映像名称
     PID             eq, ne, gt, lt, ge, le    PID 值
     SESSION         eq, ne, gt, lt, ge, le    会话编号
-    SESSIONNAME     eq, ne                    会话名称
+    SESSIONNAME     eq, ne                    会话名
     CPUTIME         eq, ne, gt, lt, ge, le    CPU 时间，格式为
                                               hh:mm:ss。
-                                              hh - 小时，
-                                              mm - 分钟，ss - 秒
-    MEMUSAGE        eq, ne, gt, lt, ge, le    内存使用(以 KB 为单位)
-    USERNAME        eq, ne                    用户名，格式为
-                                              [域\]用户
+                                              hh - 时，
+                                              mm - 分，ss - 秒
+    MEMUSAGE        eq, ne, gt, lt, ge, le    内存使用量，单位为 KB
+    USERNAME        eq, ne                    用户名，格式为 [domain\]user
     SERVICES        eq, ne                    服务名称
     WINDOWTITLE     eq, ne                    窗口标题
-    模块         eq, ne                    DLL 名称
+    MODULES         eq, ne                    DLL 名称
 
-注意: 当查询远程计算机时，不支持 "WINDOWTITLE" 和 "STATUS"
+说明: 当查询远程机器时，不支持 "WINDOWTITLE" 和 "STATUS"
       筛选器。
 
-Examples:
+示例:
     TASKLIST
     TASKLIST /M
     TASKLIST /V /FO CSV
     TASKLIST /SVC /FO LIST
-    TASKLIST /APPS /FI "STATUS eq RUNNING"
     TASKLIST /M wbem*
     TASKLIST /S system /FO LIST
-    TASKLIST /S system /U 域\用户名 /FO CSV /NH
+    TASKLIST /S system /U domain\username /FO CSV /NH
     TASKLIST /S system /U username /P password /FO TABLE /NH
     TASKLIST /FI "USERNAME ne NT AUTHORITY\SYSTEM" /FI "STATUS eq running"

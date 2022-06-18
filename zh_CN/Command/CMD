@@ -59,8 +59,8 @@ CMD [/A | /U] [/Q] [/D] [/E:ON | /E:OFF] [/F:ON | /F:OFF] [/V:ON | /V:OFF]
 
     HKEY_CURRENT_USER\Software\Microsoft\Command Processor\AutoRun
 
-命令扩展是按默认值启用的。你也可以使用 /E:OFF ，为某一
-特定调用而停用扩展。你
+命令扩展是按默认值启用的。您也可以使用 /E:OFF ，为某一
+特定调用而停用扩展。您
 可以在机器上和/或用户登录会话上
 启用或停用 CMD.EXE 所有调用的扩展，这要通过设置使用
 REGEDIT.EXE 的注册表中的一个或两个 REG_DWORD 值:
@@ -102,9 +102,9 @@ REGEDIT.EXE 的注册表中的一个或两个 REG_DWORD 值:
 
 有关特定详细信息，请键入 commandname /? 查看。
 
-延迟环境变量扩展不按默认值启用。你
+延迟环境变量扩展不按默认值启用。您
 可以用/V:ON 或 /V:OFF 开关，为 CMD.EXE 的某个调用而
-启用或停用延迟环境变量扩展。你
+启用或停用延迟环境变量扩展。您
 可以在机器上和/或用户登录会话上启用或停用 CMD.EXE 所有
 调用的延迟扩展，这要通过设置使用 REGEDIT.EXE 的注册表中的
 一个或两个 REG_DWORD 值:
@@ -127,8 +127,8 @@ REGEDIT.EXE 的注册表中的一个或两个 REG_DWORD 值:
 惊叹号字符可在执行时间被用来
 代替一个环境变量的数值。
 
-你可以用 /F:ON 或 /F:OFF 开关为 CMD.EXE 的某个
-调用而启用或禁用文件名完成。你可以在计算上和/或
+您可以用 /F:ON 或 /F:OFF 开关为 CMD.EXE 的某个
+调用而启用或禁用文件名完成。您可以在计算上和/或
 用户登录会话上启用或禁用 CMD.EXE 所有调用的完成，
 这可以通过使用 REGEDIT.EXE 设置注册表中的下列
  REG_DWORD 的全部或其中之一:

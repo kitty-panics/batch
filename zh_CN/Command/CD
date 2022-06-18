@@ -28,4 +28,4 @@ CHDIR 命令不把空格当作分隔符，因此有可能将目录名改为一个
 
      cd "\winnt\profiles\username\programs\start menu" 
 
-在扩展停用的情况下，你必须键入以上命令。
+在扩展停用的情况下，您必须键入以上命令。

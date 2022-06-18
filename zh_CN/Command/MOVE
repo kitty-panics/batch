@@ -6,10 +6,10 @@ MOVE [/Y | /-Y] [drive:][path]filename1[,...] destination
 要重命名一个目录:
 MOVE [/Y | /-Y] [drive:][path]dirname1 dirname2
 
-  [drive:][path]filename1 指定你想移动的文件位置和名称。
+  [drive:][path]filename1 指定您想移动的文件位置和名称。
   destination             指定文件的新位置。目标可包含一个驱动器号
                           和冒号、一个目录名或组合。如果只移动一个文件
-                          并在移动时将其重命名，你还可以包括文件名。
+                          并在移动时将其重命名，您还可以包括文件名。
   [drive:][path]dirname1  指定要重命名的目录。
   dirname2                指定目录的新名称。
 

@@ -22,7 +22,7 @@ SORT [/R] [/+n] [/M kilobytes] [/L locale] [/REC recordbytes]
                               否则，为主内存的 45%。
   /REC[ORD_MAXIMUM] characters 指定记录中的最大字符数量
                               (默认值为 4096，最大值为 65535)。
-  /R[EVERSE]                  颠倒排列顺序，即，从 Z 到 A，再从 9 到 0。
+  /R[EVERSE]                  颠倒排序顺序，即，从 Z 到 A，再从 9 到 0。
   [drive1:][path1]filename1   指定要排序的文件。如果没有指定，则排序标准
                               输入。指定输入文件比将同一个文件重定向为标
                               准输入快。

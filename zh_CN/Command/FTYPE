@@ -17,7 +17,7 @@ FTYPE 命令将删除那个文件类型的开放式命令字符串。在一个
     ASSOC .pl=PerlScript
     FTYPE PerlScript=perl.exe %1 %*
 
-允许你启用以下 Perl 脚本:
+允许您启用以下 Perl 脚本:
 
     script.pl 1 2 3
 
